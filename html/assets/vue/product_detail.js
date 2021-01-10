@@ -17,7 +17,6 @@ var product_detail = new Vue({
                     type: "GET",
                     success: function (res) {
 
-                        console.log(res)
                         self.product_detail = res
                     },
                     error: function (xhr, status, error) {

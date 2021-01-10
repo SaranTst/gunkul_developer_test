@@ -16,7 +16,6 @@
                     type: "GET",
                     success: function(res){
 
-                        console.log(res)
                         self.products = res
                     },
                     error: function(xhr, status, error){
@@ -43,7 +42,6 @@
                     self.storageCarts.forEach((val, i) => {
                         if (val.id === id) {
                             productDuplicate = 1
-                            console.log('have ' + val.id)
                         }
                     })
 
@@ -71,7 +69,6 @@
 
                 setTimeout(function(){
                     $(".cart-dropdown").removeClass("cart-dropdown-active");
-                    console.log('111')
                 }, 4000)
             }
         },
