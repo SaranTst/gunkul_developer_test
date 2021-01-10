@@ -42,6 +42,13 @@
                     self.storageCarts.forEach((val, i) => {
                         if (val.id === id) {
                             productDuplicate = 1
+
+                            Swal.fire({
+                                title: 'แจ้งเตือน',
+                                text: 'มีสินค้าชิ้นนี้อยู่ในรถเข็นแล้ว',
+                                icon: 'info',
+                                confirmButtonText: 'ตกลง'
+                            })
                         }
                     })
 
