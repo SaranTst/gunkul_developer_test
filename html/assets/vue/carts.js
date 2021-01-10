@@ -101,11 +101,17 @@
         watch: {
             products: function (val, oldVal) {
 
-                app.products = this.products
+                let self = this
+                if (typeof app !== "undefined") {
+                    app.products = self.products
+                }
             },
             storageCarts: function (val, oldVal) {
 
-                app.storageCarts = this.storageCarts
+                let self = this
+                if (typeof app !== "undefined") {
+                    app.storageCarts = self.storageCarts
+                }
             },
         }
     })

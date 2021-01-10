@@ -35,7 +35,3 @@
 
 <script src="assets/vue/product_detail.js"></script>
 <?php include "footer.html" ?>
-
-<!--<script>-->
-<!--    console.log(JSON.parse(localStorage.getItem('product_detail')))-->
-<!--</script>-->
