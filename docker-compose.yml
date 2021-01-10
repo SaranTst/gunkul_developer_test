@@ -1,0 +1,10 @@
+version: '2'
+services:
+   webapp:
+      image: php:7.2-apache
+      container_name: gunkul-test-webapp
+      restart: always
+      volumes:
+         - ./html/:/var/www/html
+      ports:
+         - 8002:80
